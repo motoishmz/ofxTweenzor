@@ -87,14 +87,14 @@ void Tweenzor::update(int a_millis) {
 	
 }
 
-// add a tween that uses frames as time //
-//--------------------------------------------------------------
-void Tweenzor::add(float* a_property, float a_begin, float a_end, int a_delay, int a_duration, int a_easeType, float a_p, float a_a) {
-	removeCompleteListener( a_property );
-	removeTween( a_property );
-	Tween tweenzlebob( a_property, __instance->_currMillis, a_begin, a_end, a_delay, a_duration, a_easeType, a_p, a_a );
-	__instance->_tweens.push_back( tweenzlebob );
-}
+//// add a tween that uses frames as time //
+////--------------------------------------------------------------
+//void Tweenzor::add(float* a_property, float a_begin, float a_end, int a_delay, int a_duration, int a_easeType, float a_p, float a_a) {
+//	removeCompleteListener( a_property );
+//	removeTween( a_property );
+//	Tween tweenzlebob( a_property, __instance->_currMillis, a_begin, a_end, a_delay, a_duration, a_easeType, a_p, a_a );
+//	__instance->_tweens.push_back( tweenzlebob );
+//}
 
 // add a tween in seconds, pass in float for delay and duration //
 //--------------------------------------------------------------
